@@ -16,5 +16,9 @@ THEN the saved events persist
 
 var testing = moment().format('dddd MMMM Do YYYY');
 document.getElementById("testing").innerHTML = testing;
-var currentTime = moment().format('h:mm:ss');
+var currentTime = moment().format('h');
+var currentTimeInteger = parseInt(currentTime);
+console.log(currentTimeInteger);
 console.log(currentTime);
+
+
