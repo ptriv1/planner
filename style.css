@@ -25,6 +25,20 @@ textarea {
   white-space: pre-wrap;
 }
 
+.container {
+  justify-content: center;
+}
+
+.time-label {
+  height: 40px;
+  width: 60px;
+  text-align: center;
+}
+
+.time {
+  width: 700px;
+}
+
 .time-block {
   text-align: center;
   border-radius: 15px;
@@ -62,10 +76,13 @@ textarea {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
+  padding: 20px;
+  text-align: center;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  height: 50px;
 }
