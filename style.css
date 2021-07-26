@@ -29,14 +29,22 @@ textarea {
   justify-content: center;
 }
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .time-label {
-  height: 40px;
-  width: 60px;
-  text-align: center;
+  padding-left: 100px;
+  padding-top: 50px;
+  height: 100px;
+  justify-content: center;
+  text-align: right;
 }
 
 .time {
-  width: 700px;
+  height: 100px;
+  width: 800px;
 }
 
 .time-block {
@@ -77,6 +85,9 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   padding: 20px;
+  height: 100px;
+  width: 100px;
+  margin-top: 18px;
   text-align: center;
   color: white;
 }
