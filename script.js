@@ -23,17 +23,19 @@ console.log(currentTime);
 var timeBlock = $('.time');
 console.log(timeBlock);
 
+
 $(".time").each(function(index, value) {
-    if (timeBlock < currentTimeInteger) {
-        $('.time').addClass("past");
+    var timeHour = parseInt($(value).attr("id"));
+    if (timeHour < currentTimeInteger) {
+        $(value).addClass("past");
     }
-    if (timeBlock == currentTimeInteger) {
-        $('.time').addClass("present");
+    if (timeHour === currentTimeInteger) {
+        $(value).addClass("present");
     }
-    if (timeBlock > currentTimeInteger) {
-        $('.time').addClass("future");
+    if (timeHour > currentTimeInteger) {
+        $(value).addClass("future");
     }
-}
+})
 
 
 var saveButton = document.querySelector('.saveBtn');
