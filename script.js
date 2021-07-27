@@ -20,16 +20,16 @@ var currentTime = moment().format('H');
 var currentTimeInteger = parseInt(currentTime);
 console.log(currentTimeInteger);
 console.log(currentTime);
-var timeBlock = document.getElementById($'id');
+var timeBlock = $('id');
 
 for (var i = 9; i <= 17; i++) {
-    if (document.getElementById('id') < currentTimeInteger) {
+    if (timeBlock < currentTimeInteger) {
         $('id').addClass("past");
     }
-    if (document.getElementById('id') == currentTimeInteger) {
+    if (timeBlock == currentTimeInteger) {
         $('id').addClass("present");
     }
-    if (document.getElementById('id') > currentTimeInteger) {
+    if (timeBlock > currentTimeInteger) {
         $('id').addClass("future");
     }
 }
