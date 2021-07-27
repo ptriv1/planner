@@ -16,9 +16,20 @@ THEN the saved events persist
 
 var testing = moment().format('dddd MMMM Do YYYY');
 document.getElementById("testing").innerHTML = testing;
-var currentTime = moment().format('h');
+var currentTime = moment().format('H');
 var currentTimeInteger = parseInt(currentTime);
 console.log(currentTimeInteger);
 console.log(currentTime);
 
 
+for (var i = 9; i <= 17; i++) {
+    if (document.getElementById($'id') < currentTimeInteger) {
+        $('id').addClass("past");
+    }
+    if (document.getElementById($'id') == currentTimeInteger) {
+        $('id').addClass("present");
+    }
+    if (document.getElementById($'id') > currentTimeInteger) {
+        $('id').addClass("future");
+    }
+}
