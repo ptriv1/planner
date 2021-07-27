@@ -20,22 +20,21 @@ var currentTime = moment().format('H');
 var currentTimeInteger = parseInt(currentTime);
 console.log(currentTimeInteger);
 console.log(currentTime);
-
+var timeBlock = document.getElementById($'id');
 
 for (var i = 9; i <= 17; i++) {
-    if (document.getElementById($'id') < currentTimeInteger) {
+    if (document.getElementById('id') < currentTimeInteger) {
         $('id').addClass("past");
     }
-    if (document.getElementById($'id') == currentTimeInteger) {
+    if (document.getElementById('id') == currentTimeInteger) {
         $('id').addClass("present");
     }
-    if (document.getElementById($'id') > currentTimeInteger) {
+    if (document.getElementById('id') > currentTimeInteger) {
         $('id').addClass("future");
     }
 }
 
 var saveButton = document.querySelector('.saveBtn');
-localStorage.setItem("time", "appointment");
 
 
 saveButton.addEventListener("click", function(event){
