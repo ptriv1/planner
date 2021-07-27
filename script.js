@@ -33,3 +33,12 @@ for (var i = 9; i <= 17; i++) {
         $('id').addClass("future");
     }
 }
+
+var saveButton = document.querySelector('.saveBtn');
+localStorage.setItem("time", "appointment");
+
+
+saveButton.addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("time", "appointment");
+})
