@@ -21,8 +21,9 @@ var currentTimeInteger = parseInt(currentTime);
 console.log(currentTimeInteger);
 console.log(currentTime);
 var timeBlock = $('.time');
+console.log(timeBlock);
 
-for (var i = 9; i <= 17; i++) {
+$(".time").each(function(index, value) {
     if (timeBlock < currentTimeInteger) {
         $('.time').addClass("past");
     }
@@ -33,6 +34,7 @@ for (var i = 9; i <= 17; i++) {
         $('.time').addClass("future");
     }
 }
+
 
 var saveButton = document.querySelector('.saveBtn');
 
