@@ -20,17 +20,17 @@ var currentTime = moment().format('H');
 var currentTimeInteger = parseInt(currentTime);
 console.log(currentTimeInteger);
 console.log(currentTime);
-var timeBlock = $('id');
+var timeBlock = $('.time');
 
 for (var i = 9; i <= 17; i++) {
     if (timeBlock < currentTimeInteger) {
-        $('id').addClass("past");
+        $('.time').addClass("past");
     }
     if (timeBlock == currentTimeInteger) {
-        $('id').addClass("present");
+        $('.time').addClass("present");
     }
     if (timeBlock > currentTimeInteger) {
-        $('id').addClass("future");
+        $('.time').addClass("future");
     }
 }
 
