@@ -47,3 +47,9 @@ saveButton.addEventListener("click", function(event){
     event.preventDefault();
     localStorage.setItem("time", "appointment");
 })
+
+function handleSave(id) {
+    var textarea = document.getElementById(id);
+    console.log(textarea.value);
+    localStorage.setItem(id, textarea.value);
+}
