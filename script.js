@@ -37,19 +37,23 @@ $(".time").each(function(index, value) {
     }
 })
 
-
-var saveButton = document.querySelector('.saveBtn');
-var savedTime = document.querySelectorAll('.time').innerText;
-console.log(savedTime);
-
-
-saveButton.addEventListener("click", function(event){
-    event.preventDefault();
-    localStorage.setItem("time", "appointment");
-})
-
 function handleSave(id) {
     var textarea = document.getElementById(id);
     console.log(textarea.value);
     localStorage.setItem(id, textarea.value);
 }
+
+function handlePageLoad() {
+    var elements = document.querySelectorAll('.time');
+
+    elements.forEach(function(element) {
+        var elementId = element.id;
+        var storage = localStorage.getItem(elementId);
+
+        if (storage != null) {
+            element.placeholder = storage;
+        }
+    });
+}
+
+handlePageLoad();
