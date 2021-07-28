@@ -39,6 +39,8 @@ $(".time").each(function(index, value) {
 
 
 var saveButton = document.querySelector('.saveBtn');
+var savedTime = document.querySelectorAll('.time').innerText;
+console.log(savedTime);
 
 
 saveButton.addEventListener("click", function(event){
