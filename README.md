@@ -4,6 +4,8 @@ This is a planner that shows time blocks from 8 am to 5 pm.  The user can click 
 
 Technologies used include HTML, CSS, and JavaScript.
 
+License: MIT
+
 Image: https://ibb.co/bBFXS3d
 
 GitHub: https://github.com/ptriv1/planner
