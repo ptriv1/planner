@@ -10,3 +10,5 @@ Image: https://ibb.co/bBFXS3d
 
 GitHub: https://github.com/ptriv1/planner
 GitHub page: https://ptriv1.github.io/planner/
+
+Contact: trivedp18@gmail.com
